@@ -94,8 +94,8 @@ Released for free under a Creative Commons Attribution 3.0 License
         <mt:SearchResults>
 
         <mt:SearchResultsHeader>
-                <div id="content-nav-top">
-                    <mt:IfPreviousResults><a href="<$mt:PreviousLink$>" rel="prev" onclick="return swapContent(-1);">&lt; 前</a>&nbsp;&nbsp;</mt:IfPreviousResults><mt:PagerBlock><mt:IfCurrentPage><$mt:Var name="__value__"$><mt:Else><a href="<$mt:PagerLink encode_html="1"$>"><$mt:Var name="__value__"$></a></mt:IfCurrentPage><mt:Unless name="__last__">&nbsp;</mt:Unless></mt:PagerBlock><mt:IfMoreResults>&nbsp;&nbsp;<a href="<$mt:NextLink$>" rel="next" onclick="return swapContent();">次 &gt;</a></mt:IfMoreResults>
+                <div id="content-nav-top" class="pagenavi">
+                    <mt:IfPreviousResults><a href="<$mt:PreviousLink$>" rel="prev" onclick="return swapContent(-1);">&lt; <__trans phrase="Previous"></a>&nbsp;&nbsp;</mt:IfPreviousResults><mt:PagerBlock><mt:IfCurrentPage><span class="current"><$mt:Var name="__value__"$></span><mt:Else><a href="<$mt:PagerLink encode_html="1"$>"><$mt:Var name="__value__"$></a></span></mt:IfCurrentPage><mt:Unless name="__last__">&nbsp;</mt:Unless></mt:PagerBlock><mt:IfMoreResults>&nbsp;&nbsp;<a href="<$mt:NextLink$>" rel="next" onclick="return swapContent();"><__trans phrase="Next"> &gt;</a></mt:IfMoreResults>
                 </div>
             <h1 id="page-title">
             <mt:IfStraightSearch>
@@ -109,13 +109,13 @@ Released for free under a Creative Commons Attribution 3.0 License
 
         <h2><a href="<mt:EntryPermaLink />"><mt:EntryTitle /></a></h2>
         <mt:EntryExcerpt>
-        <mt:If tag="entrymore"><p class="spec"><a href="<mt:EntryPermaLink>" class="rm">Read more</a></p></mt:If>
+        <p><a href="<mt:EntryPermaLink>" class="rm">Read more</a></p>
 
         <mt:SearchResultsFooter>
 
         <mt:Ignore><!-- Used with the ajax search capability of the new search class --></mt:Ignore>
-                <div id="content-nav-bottom">
-                    <mt:IfPreviousResults><a href="<$mt:PreviousLink$>" rel="prev" onclick="return swapContent(-1);">&lt; <__trans phrase="Previous"></a>&nbsp;&nbsp;</mt:IfPreviousResults><mt:PagerBlock><mt:IfCurrentPage><$mt:Var name="__value__"$><mt:Else><a href="<$mt:PagerLink encode_html="1"$>"><$mt:Var name="__value__"$></a></mt:IfCurrentPage><mt:Unless name="__last__">&nbsp;</mt:Unless></mt:PagerBlock><mt:IfMoreResults>&nbsp;&nbsp;<a href="<$mt:NextLink$>" rel="next" onclick="return swapContent();"><__trans phrase="Next"> &gt;</a></mt:IfMoreResults>
+                <div id="content-nav-bottom" class="pagenavi">
+                    <mt:IfPreviousResults><a href="<$mt:PreviousLink$>" rel="prev" onclick="return swapContent(-1);">&lt; <__trans phrase="Previous"></a>&nbsp;&nbsp;</mt:IfPreviousResults><mt:PagerBlock><mt:IfCurrentPage><span class="current"><$mt:Var name="__value__"$></span><mt:Else><a href="<$mt:PagerLink encode_html="1"$>"><$mt:Var name="__value__"$></a></mt:IfCurrentPage><mt:Unless name="__last__">&nbsp;</mt:Unless></mt:PagerBlock><mt:IfMoreResults>&nbsp;&nbsp;<a href="<$mt:NextLink$>" rel="next" onclick="return swapContent();"><__trans phrase="Next"> &gt;</a></mt:IfMoreResults>
                 </div>
         </mt:SearchResultsFooter>
         </mt:SearchResults>

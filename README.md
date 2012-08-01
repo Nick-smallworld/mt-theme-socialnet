@@ -9,7 +9,7 @@ This theme is appropriate for SMB’s website and personal blog, as a base of cu
 SocialNet
 
 ## Corresponding CMS ##
-Movable Type 5.x upper　
+Movable Type 5.x upper
 (for Blog)
 
 ## Corresponding browser ##
@@ -49,14 +49,12 @@ http://www.movabletype.org/documentation/themes/index.html
 
 
 ## Simple start-up ##
-
 ### Initial status after intallation ###
 
 After installation, blog has below data:
 * Dummy webpages
 * Dummy toppage
 * Dummy folder
-* Dummy footer
 
 ### Toppage ###
 On topage, MT’s page which has “＠TOPPAGE” tag will be displayed.  When there is no page with “＠TOPPAGE” tag, then three latest blog entries will be appeard.
@@ -75,24 +73,16 @@ On side navitation of webpage, all published pages will appear. Give “@NOT_DIS
 
 ### Banner footer ###
 
-On Banner Footer template, there are three widget in default status.
+On Banner Footer template, there are three widgets in default status. Though they don't appear on the page because of <mt:Ignore> tags.
 
-With “Recent Items” widget, dummy thumbnails will be appeared if there are no image files in MT.
-
+If you want to use footer columns, please remove <mt:Ignore> tags and display them.
+In “Recent Items” widget, dummy thumbnails will be appeared if there are no image files in MT.
 If some image files have been uploaded as MT’s asset files, then thumbnails with square shape will be appeared.
 
 Widget templates has dummy data in it’s default status. Please modify them as you like.
 
-### Sample webpage ###
-This theme has some sample page data and folders in default. If you don’t need these dummy pages and folders, rename “nopage_theme.yaml” to “theme.yaml” and use it as default yaml file and make installation.
-
 ### Dummy message on main image ###
 In default, dummy message will be appeared on main image. This message has written in “Banner Header” template. Please modify as you like.
-
-### If you want to use an make blog quickly ###
-
-1. Delete “Banner Footer” including line from all templates
-2. Delete all data in “Banner Footer” template
 
 ## Exemption from liability ##
 Author don’t have any responsibility for any damages, loss or expenses with usage of the templates. 

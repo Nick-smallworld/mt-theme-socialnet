@@ -34,8 +34,8 @@ h1 {
     padding: 20px 0 0 0;
     color: #636363;
     font-weight: bold;
-    font-size: 38px;
-    font-family: 1.2em Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: -2px;
 }
 h1 a,
@@ -139,7 +139,7 @@ ul,
 /* content */
 .content {
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto 3em;
     width: 923px;
 }
 .mainbar {
@@ -161,7 +161,11 @@ ul,
     margin: 0;
     padding: 10px 0 5px 15px;
 }
-.mainbar .article a { color: #78bbe6 }
+.mainbar .article a,
+.mainbar .breadcrumb a {
+    color: #78bbe6
+}
+
 .mainbar .post-data a { color: #595959 }
 .mainbar .spec a {
     padding: 5px 15px;
@@ -329,7 +333,7 @@ ol li .send { margin: 16px 0 0 0 }
     padding: 0;
     border: 1px solid #e1dddd;
 }
-.search input#s {
+.search input#search {
     float: left;
     width: 185px;
     padding: 7px 0 7px 10px;
@@ -382,4 +386,9 @@ ol li .send { margin: 16px 0 0 0 }
     width: 100%;
     font-size: 0px;
     line-height: 0px;
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 10px 0 5px 15px;
 }

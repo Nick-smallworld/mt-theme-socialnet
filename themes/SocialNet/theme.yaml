@@ -4,7 +4,7 @@ name: SocialNet
 author_name: Nick
 author_link: http://www.linkedin.com/pub/takeshi-osanai/10/3a/3a5
 doc_link: https://github.com/Nick-smallworld/mt-theme-socialnet
-version: '0.5'
+version: '1.0'
 class: blog
 description: '<__trans phrase="SocialNet is a theme for SMBs website and personal blog.">'
 thumbnail_file: thumb.jpg

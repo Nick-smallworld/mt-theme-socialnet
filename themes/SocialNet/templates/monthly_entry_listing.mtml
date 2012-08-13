@@ -22,6 +22,8 @@ Released for free under a Creative Commons Attribution 3.0 License
 
 <div class="main">
 
+    <mt:Include module="<__trans phrase="Banner Header">">
+
     <div class="content">
 
     <div class="content_resize">
@@ -39,7 +41,7 @@ Released for free under a Creative Commons Attribution 3.0 License
         <div class="article">
             <h2><a href="<mt:EntryPermaLink>"><mt:EntryTitle /></a></h2><div class="clr"></div>
             <p>Posted by <mt:EntryAuthorDisplayName /> &nbsp;|&nbsp; Category <mt:EntryCategories glue=","><a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel /></a></mt:EntryCategories></p>
-            <mt:EntryBody words="100">
+            <mt:EntryExcerpt>
             <mt:If tag="entrymore"><p><a href="<mt:EntryPermalink>">read more</a></p></mt:If>
         </div>
 </mt:Entries>

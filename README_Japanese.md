@@ -17,7 +17,7 @@ Movable Type 5.x 以上 (ブログ用テーマ)
 * Internet Explorler 8,9
 * Safari 5.1
 
-以上、2012年7月31日現在
+以上、2012年8月10日現在
 
 ## 書式 ##
 html5+CSS3
